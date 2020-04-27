@@ -1,0 +1,17 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /api
+
+#spring:
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          jwk-set-uri: http://localhost:8080/oauth/.well-known/jwks.json
+
+security:
+  oauth2:
+    resource:
+      jwk:
+        key-set-uri: http://localhost:8080/oauth/.well-known/jwks.json
